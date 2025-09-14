@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Maan Albazei - Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%236366f1;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%238b5cf6;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='20' fill='url(%23grad)'/%3E%3Ctext x='50' y='65' font-family='Inter, sans-serif' font-size='40' font-weight='700' text-anchor='middle' fill='white'%3EMA%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">MA</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+            
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#languages" class="nav-link">Languages</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#education" class="nav-link">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#certifications" class="nav-link">Certifications</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="theme-toggle">
+                <button id="theme-toggle-btn" class="theme-btn">
+                    <i class="fas fa-moon" id="theme-icon"></i>
+                </button>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Hi, I'm <span class="highlight">Maan Albazei</span>
+                </h1>
+                <h2 class="hero-subtitle">A Senior Computer Science Student</h2>
+                <p class="hero-description">
+                    Dedicated Computer Science Student with a strong academic foundation in software development and core computer science principles. 
+                    Proficient in Python, Java, SQL, and Hadoop with expertise in AI, ML, Cloud Computing, and project management.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-card">
+                    <div class="profile-image">
+                        <img src="profile-photo.jpg" alt="Maan Albazei" class="profile-photo">
+                    </div>
+                    <div class="profile-info">
+                        <h3>Maan Albazei</h3>
+                        <p>Senior CS Student</p>
+                        <div class="social-links">
+                            <a href="https://github.com/MaanAlbazei" class="social-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/maanalbazei" class="social-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://wa.me/966555223910" class="social-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a dedicated Computer Science student at Prince Sultan University with a strong academic foundation in software development and core computer science principles. 
+                        My journey in programming has led me to master Python, Java, SQL, and Hadoop while exploring advanced technologies like AI, ML, and Cloud Computing.
+                    </p>
+                    <p>
+                        Through rigorous professional courses on Coursera, I've reinforced my expertise in advanced technologies and project management best practices. 
+                        I possess a proven ability to adapt quickly and solve complex problems across diverse technical environments.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>8+</h3>
+                            <p>Professional Courses</p>
+                        </div>
+                        <div class="stat">
+                            <h3>4+</h3>
+                            <p>Years in CS</p>
+                        </div>
+                        <div class="stat">
+                            <h3>6+</h3>
+                            <p>Technologies Mastered</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-code"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-content">
+                <div class="skills-category">
+                    <h3>Technical Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js-square"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-java"></i>
+                            <span>Java</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>SQL</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-chart-bar"></i>
+                            <span>Data Analysis</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-project-diagram"></i>
+                            <span>UML Diagrams</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-tasks"></i>
+                            <span>Project Management</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>Database Management</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3>Frameworks & Libraries</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>Hadoop</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Security Governance</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-jira"></i>
+                            <span>Jira</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-linux"></i>
+                            <span>Linux</span>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <span>Software Development</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-brain"></i>
+                            <span>TensorFlow</span>
+
+                        </div>
+                       
+                        <div class="skill-item">
+                            <i class="fas fa-brain"></i>
+                            <span>Pytorch</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-brain"></i>
+                            <span>Scikit-learn</span>
+                        </div>
+
+                      
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3>Tools & Technologies</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fas fa-brain"></i>
+                            <span>AI & Machine Learning</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-cloud"></i>
+                            <span>Cloud Computing</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>GRC</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-digital-ocean"></i>
+                            <span>Digital Transformation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Languages Section -->
+    <section id="languages" class="languages">
+        <div class="container">
+            <h2 class="section-title">Languages</h2>
+            <div class="languages-content">
+                <div class="language-item">
+                    <div class="language-flag">
+                        <i class="fas fa-flag"></i>
+                    </div>
+                    <div class="language-info">
+                        <h3>Arabic</h3>
+                        <p>Native Speaker</p>
+                        <div class="language-level">
+                            <div class="level-bar">
+                                <div class="level-fill" style="width: 100%"></div>
+                            </div>
+                            <span class="level-text">100%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="language-item">
+                    <div class="language-flag">
+                        <i class="fas fa-flag-usa"></i>
+                    </div>
+                    <div class="language-info">
+                        <h3>English</h3>
+                        <p>Fluent</p>
+                        <div class="language-level">
+                            <div class="level-bar">
+                                <div class="level-fill" style="width: 90%"></div>
+                            </div>
+                            <span class="level-text">90%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">Education & Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Bachelor of Science in Computer Science</h3>
+                        <h4>Prince Sultan University</h4>
+                        <p class="timeline-date">January 2020 - July 2026</p>
+                        <p>Relevant Coursework: Data Structures & Algorithms, Database Systems, Software Engineering, Machine Learning, Computer Networks, Security Governance, Project Management</p>
+                        <p><strong>Status:</strong> Senior Student (Expected Graduation: July 2026)</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Trainee | Operation Supervisor</h3>
+                        <h4>Sela, Boulevard Operations</h4>
+                        <p class="timeline-date">October 2022 - February 2023</p>
+                        <p>Operated fountain system achieving synchronized shows with technical teams. Supervised site operations and ensured smooth coordination across multiple service providers. Supported warehouse management by monitoring inventory and facilitating service logistics.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Professional Development</h3>
+                        <h4>Coursera & Tuwaiq Academy</h4>
+                        <p class="timeline-date">2024 - 2025</p>
+                        <p>Completed 8+ professional courses including Foundations of AI and Machine Learning (Microsoft), JavaScript 103 Advanced, Fundamentals of Project Management, Parallel Programming in Java, and Security Governance & Compliance.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>EC English Certificate</h3>
+                        <h4>Los Angeles, USA</h4>
+                        <p class="timeline-date">2017</p>
+                        <p>Completed intensive English language program in Los Angeles, USA, achieving fluent proficiency in English communication.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <h2 class="section-title">Certifications & Courses</h2>
+            <div class="certifications-grid">
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3>Foundations of AI and Machine Learning</h3>
+                        <p class="cert-provider">Coursera | Microsoft</p>
+                        <p class="cert-date">September 2025</p>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fab fa-js-square"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3>JavaScript 103 | Advanced</h3>
+                        <p class="cert-provider">Tuwaiq Academy / Satr</p>
+                        <p class="cert-date">May 2025</p>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3>Fundamentals of Project Management</h3>
+                        <p class="cert-provider">Coursera</p>
+                        <p class="cert-date">April 2025</p>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fab fa-java"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3>Parallel Programming in Java</h3>
+                        <p class="cert-provider">Coursera</p>
+                        <p class="cert-date">April 2025</p>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3>Security Governance & Compliance</h3>
+                        <p class="cert-provider">Coursera</p>
+                        <p class="cert-date">October 2024</p>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3>Ethics, Technology and Engineering</h3>
+                        <p class="cert-provider">Coursera</p>
+                        <p class="cert-date">April 2024</p>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3>Introducing Security: Aligning Asset and Risk Management</h3>
+                        <p class="cert-provider">Coursera</p>
+                        <p class="cert-date">February 2024</p>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3>EC English Certificate</h3>
+                        <p class="cert-provider">Los Angeles, USA</p>
+                        <p class="cert-date">2017</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect!</h3>
+                    <p>I'm always interested in new opportunities and collaborations. Feel free to reach out!</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>MaanAlbazei@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+966 55 522 3910</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Riyadh, Saudi Arabia</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/MaanAlbazei" class="social-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/maanalbazei" class="social-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://wa.me/966555223910" class="social-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Maan Albazei. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Photo Modal -->
+    <div id="photoModal" class="photo-modal">
+        <div class="photo-modal-content">
+            <span class="photo-modal-close">&times;</span>
+            <img id="modalPhoto" src="profile-photo.jpg" alt="Maan Albazei">
+            <div class="photo-modal-info">
+                <h3>Maan Albazei</h3>
+                <p>Senior Computer Science Student</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
