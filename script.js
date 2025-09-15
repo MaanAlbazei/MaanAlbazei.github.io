@@ -377,12 +377,13 @@ window.addEventListener('load', () => {
 (() => {
   const chatbotModal = document.getElementById('chatbotModal');
   const chatbotToggle = document.getElementById('chatbotToggle');
+  const chatbotToggleMobile = document.getElementById('chatbotToggleMobile');
   const chatbotClose = document.getElementById('chatbotClose');
   const chatbotInput = document.getElementById('chatbotInput');
   const chatbotSend = document.getElementById('chatbotSend');
   const chatbotMessages = document.getElementById('chatbotMessages');
 
-  if (!chatbotModal || !chatbotToggle) return;
+  if (!chatbotModal || (!chatbotToggle && !chatbotToggleMobile)) return;
 
   // Maan's information for the chatbot
   const maanInfo = {
@@ -541,11 +542,30 @@ window.addEventListener('load', () => {
   };
 
   // Event listeners
-  chatbotToggle.addEventListener('click', () => {
-    chatbotModal.classList.add('show');
-    bodyEl.style.overflow = 'hidden';
-    chatbotInput.focus();
-  });
+  // Desktop chatbot toggle
+  if (chatbotToggle) {
+    chatbotToggle.addEventListener('click', () => {
+      chatbotModal.classList.add('show');
+      bodyEl.style.overflow = 'hidden';
+      chatbotInput.focus();
+    });
+  }
+
+  // Mobile chatbot toggle
+  if (chatbotToggleMobile) {
+    chatbotToggleMobile.addEventListener('click', () => {
+      chatbotModal.classList.add('show');
+      bodyEl.style.overflow = 'hidden';
+      chatbotInput.focus();
+      // Close mobile menu when opening chatbot
+      const hamburger = document.querySelector('.hamburger');
+      const navMenu = document.querySelector('.nav-menu');
+      if (hamburger && navMenu) {
+        hamburger.classList.remove('active');
+        navMenu.classList.remove('active');
+      }
+    });
+  }
 
   chatbotClose.addEventListener('click', () => {
     chatbotModal.classList.remove('show');

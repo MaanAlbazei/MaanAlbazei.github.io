@@ -1336,8 +1336,7 @@ section {
     }
 
     .nav-actions {
-        gap: var(--space-2);
-        order: 3;
+        display: none;
     }
 
     .nav-btn {
@@ -1393,6 +1392,46 @@ section {
     .nav-link.active {
         background: rgba(139, 147, 249, 0.2);
         color: var(--accent-primary);
+    }
+
+    /* Mobile Actions */
+    .mobile-actions {
+        display: flex;
+        justify-content: center;
+        padding: var(--space-4) 0;
+        margin-top: var(--space-4);
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .mobile-actions .nav-btn {
+        width: 48px;
+        height: 48px;
+        border-radius: var(--radius-md);
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        color: rgba(255, 255, 255, 0.9);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all var(--transition-normal);
+    }
+
+    .mobile-actions .nav-btn:hover {
+        background: rgba(255, 255, 255, 0.2);
+        border-color: rgba(255, 255, 255, 0.3);
+        color: #ffffff;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .mobile-actions .theme-toggle:hover {
+        background: var(--accent-primary);
+        border-color: var(--accent-primary);
+    }
+
+    .mobile-actions .chatbot-toggle:hover {
+        background: var(--brand-success);
+        border-color: var(--brand-success);
     }
 
     /* Mobile Hero Section */
